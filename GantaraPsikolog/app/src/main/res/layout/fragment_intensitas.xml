@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryText"
+    tools:context="com.gantara.mohfajar.DetailAtlet.Intensitas.IntensitasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <ImageView
+            android:id="@+id/imageViewIntensitasTarget"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_assistant" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target Intensitas"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewIntensitasTarget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView1"
+                android:text="80"
+                android:textColor="@android:color/black"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewIntensitasTarget"
+                android:layout_alignBottom="@+id/textViewIntensitasTarget"
+                android:layout_toEndOf="@+id/textViewIntensitasTarget"
+                android:layout_toRightOf="@+id/textViewIntensitasTarget"
+                android:text="%"
+                android:textColor="@android:color/black"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Edit Target Intensitas"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

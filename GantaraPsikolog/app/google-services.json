@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "804549664227",
+    "firebase_url": "https://gantara-c91fa.firebaseio.com",
+    "project_id": "gantara-c91fa",
+    "storage_bucket": "gantara-c91fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804549664227:android:b38f3a6f76718c13",
+        "android_client_info": {
+          "package_name": "com.gantara.mohfajar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804549664227-7tpjmkk8n4eikpvge4jo5hn6b7gmpdk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiwxVVuFPREydLadE1fVfOs9FCHm6KcOo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

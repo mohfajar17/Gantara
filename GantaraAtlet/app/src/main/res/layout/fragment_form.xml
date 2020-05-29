@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mohfajar.gantara.Form.FormFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Isi Harian"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sesi latihan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/radioButtonFSesiLatihan">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFSesiLatihan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="pagi (antara pk.05.00-10.00)"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFSesiLatihan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="siang (antara pk.10.00-14.00)"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFSesiLatihan3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sore (antara pk.14.00-18.00)"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFSesiLatihan4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="malam (antara pk.18.00-22.00)"
+                            android:textSize="17sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi Sesi Latihan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.  ANTUSIASME sebelum latihan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tidak bergairah - semangat tinggi"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+
+                    <Spinner
+                        android:id="@+id/spinnerAntusiasmeSebelum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/skala110"
+                        android:popupBackground="@color/colorPrimaryText"
+                        android:spinnerMode="dialog"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.  ANTUSIASME sesudah latihan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tidak bergairah - semangat tinggi"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+
+                    <Spinner
+                        android:id="@+id/spinnerAntusiasmeSesudah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/skala110"
+                        android:spinnerMode="dialog"
+                        android:popupBackground="@color/colorPrimaryText"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.  Kondisi FISIK selama latihan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioButtonFFisik"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFFisik1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ada cidera dan nyeri"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFFisik2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ada cidera tapi tidak ada nyeri"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFFisik3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="tidak ada cidera tapi ada nyeri"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFFisik4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="badan pegel dan capek"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFFisik5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="tidak cidera, tidak nyeri"
+                            android:textSize="17sp" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bila ada cidera/nyeri, di bagian tubuh mana?"/>
+
+                    <EditText
+                        android:id="@+id/editTextFCatatanFisik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:hint="kondisi / permasalahan"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.  Latihan di sesi ini membuat saya ..."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sangat tertekan - sangat menikmati"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+
+                    <Spinner
+                        android:id="@+id/spinnerStres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/skala110"
+                        android:spinnerMode="dialog"
+                        android:popupBackground="@color/colorPrimaryText"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5.  KONSENTRASI selama latihan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sangat terganggu - sangat fokus"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+
+                    <Spinner
+                        android:id="@+id/spinnerKonsentrasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/skala110"
+                        android:spinnerMode="dialog"
+                        android:popupBackground="@color/colorPrimaryText"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.  KEYAKINAN pada kemampuan diri sendiri setelah latihan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sangat rendah - sangat tinggi"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+
+                    <Spinner
+                        android:id="@+id/spinnerKeyakinan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/skala110"
+                        android:spinnerMode="dialog"
+                        android:popupBackground="@color/colorPrimaryText"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.  Pencapaian TARGET latihan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sangat tidak sesuai - sangat sesuai"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTarget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/skala110"
+                        android:spinnerMode="dialog"
+                        android:popupBackground="@color/colorPrimaryText"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8.  Tingkat KELELAHAN FISIK"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sangat lelah - sangat berenergi"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+
+                    <Spinner
+                        android:id="@+id/spinnerKelelahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/skala110"
+                        android:spinnerMode="dialog"
+                        android:popupBackground="@color/colorPrimaryText"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.  Interaksi KOMUNIKASI dalam tim (khusus atlet nomor beregu)"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sangat kacau - sangat kompak"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+
+                    <Spinner
+                        android:id="@+id/spinnerKomunikasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/skala110"
+                        android:spinnerMode="dialog"
+                        android:popupBackground="@color/colorPrimaryText"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10. Beban Intensitas yang saya rasakan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sangat ringan - sangat berat"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+
+                    <Spinner
+                        android:id="@+id/spinnerIntensitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/skala110"
+                        android:spinnerMode="dialog"
+                        android:popupBackground="@color/colorPrimaryText"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="5dp"
+                        android:src="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11. Tingkat DEHIDRASI/kehilangan cairan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioButtonFDehidrasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFDehidrasi1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dehidrasi berat/butuh minum segera"
+                            android:textSize="17sp"
+                            android:layout_marginTop="10dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFDehidrasi2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dehidrasi sedang/butuh banyak minum"
+                            android:textSize="17sp"
+                            android:layout_marginTop="10dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFDehidrasi3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dehidrasi ringan/kurang minum"
+                            android:textSize="17sp"
+                            android:layout_marginTop="10dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFDehidrasi4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="tidak dehidrasi/minum normal"
+                            android:textSize="17sp"
+                            android:layout_marginTop="10dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFDehidrasi5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="tidak dehidrasi berdasarkan tabel warna urine"
+                            android:textSize="17sp"
+                            android:layout_marginTop="10dp"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi Hari Ini"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12. Kualitas TIDUR malam"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioButtonFTidur"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFTidur1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="tidak nyenyak"
+                            android:textSize="17sp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFTidur2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 - 2 jam"
+                            android:textSize="17sp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFTidur3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 - 4 jam"
+                            android:textSize="17sp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFTidur4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5 - 6 jam"
+                            android:textSize="17sp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFTidur5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7 - 8 jam"
+                            android:textSize="17sp"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13. Kecukupan NURTISI"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bisa centang lebih dari satu"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFNutrisi1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="makan sesuai jumlah kalori dan jadwal frekuensi"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFNutrisi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="minum susu/jus tercukupi"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFNutrisi3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="vitamin/suplemen tercukupi"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFNutrisi4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="makan extra pudding/snack/buah tercukupi"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFNutrisi5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="makan berselera dan tuntas"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14. Program RECOVERY FISIK yang dilakukan"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bisa centang lebih dari satu"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFRecovery1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="tidak tahu"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFRecovery2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="steam bath, sauna/mandi air panas"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFRecovery3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ice bath, berendam air dingin"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFRecovery4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="massage, pemijatan jaringan tubuh"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFRecovery5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="active recovery, jogging ringan"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFRecovery6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="stretching"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFRecovery7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="tidur siang"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFRecovery8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="relaksasi progresif"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFRecovery9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="yang lain :"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/editTextFRecoveryLain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:inputType="text"
+                        android:hint="jawaban anda"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15. Strategi MENTAL SKILL yang dilakukan hari ini"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bisa centang lebih dari satu"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFMentalSkill1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="relaksasi"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFMentalSkill2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="visualisasi"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFMentalSkill3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="mind programming"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFMentalSkill4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="self-talk"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFMentalSkill5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="yang lain :"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/editTextFMentalSkillLain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:inputType="text"
+                        android:hint="jawaban anda"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kendala saya terkait Mentall Skill yaitu"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/editTextFKendalaMentalSkill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="jawaban anda"
+                        android:inputType="text"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16. Tuliskan saran/hal/masalah apa yang Anda INGINKAN untuk kami(Psikolog) TINDAK LANJUTI agar makin optimal dalam menghadapi latihan/kompetisi selanjutnya?"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioButtonFTindakLanjut"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFTindakLanjut1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="bingung, tidak tahu"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFTindakLanjut2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="tidak ada"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFTindakLanjut3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yang lain :"
+                            android:textSize="17sp" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/editTextFTindakLanjutLain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:inputType="text"
+                        android:hint="jawaban anda"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17. Hal positif yang saya dapatkan dari latihan kali ini ..."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/editTextFHalPositif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="jawaban anda"
+                        android:inputType="text"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Konfirmasi"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Klik simpan untuk konfirmasi penyimpanan. Pastikan semua form telah diisi." />
+
+                <Button
+                    android:id="@+id/buttonFSimpanForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Simpan"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

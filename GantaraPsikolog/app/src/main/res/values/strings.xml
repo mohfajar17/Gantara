@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Gantara</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="message_no_data">Tidak ada data</string>
+
+    <string-array name="jenisKelamin">
+        <item>-- pilih jenis kelamin --</item>
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="filterAtlet">
+        <item>Nama</item>
+        <item>Cabang Olahraga</item>
+    </string-array>
+    <string-array name="cabang_olahraga">
+        <item>-- pilih cabang olahraga --</item>
+        <item>Aeromodelling</item>
+        <item>Anggar</item>
+        <item>Atletik</item>
+        <item>Balap Sepeda</item>
+        <item>Berkuda</item>
+        <item>Billiard</item>
+        <item>Bowling</item>
+        <item>Bridge</item>
+        <item>Bulu Tangkis</item>
+        <item>Catur</item>
+        <item>Dayung</item>
+        <item>Gantole</item>
+        <item>Golf</item>
+        <item>Gulat</item>
+        <item>Judo</item>
+        <item>Karate</item>
+        <item>Layar</item>
+        <item>Loncat Indah</item>
+        <item>Menembak</item>
+        <item>PABBSI</item>
+        <item>Panahan</item>
+        <item>Panjat Tebing</item>
+        <item>Paralayang</item>
+        <item>Pencak Silat</item>
+        <item>Renang</item>
+        <item>Renang Indah</item>
+        <item>Renang OWS</item>
+        <item>Selam</item>
+        <item>Selancar Angin</item>
+        <item>Senam</item>
+        <item>Sepak Takraw</item>
+        <item>Sepatu Roda</item>
+        <item>Ski Air</item>
+        <item>Taekwondo</item>
+        <item>Tenis Lapangan</item>
+        <item>Tenis Meja</item>
+        <item>Terbang Layang</item>
+        <item>Tinju</item>
+        <item>Voli Pantai</item>
+        <item>Wushu</item>
+    </string-array>
+    <string name="title_activity_detail_atlet">DetailAtletActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

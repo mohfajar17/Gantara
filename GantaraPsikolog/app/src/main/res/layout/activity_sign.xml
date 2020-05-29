@@ -1,0 +1,83 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.gantara.mohfajar.Signup.SignActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gantara"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40sp"
+                android:textStyle="bold|italic"
+                app:fontFamily="serif" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:src="@drawable/akun" />
+
+            <TextView
+                android:id="@+id/textViewDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/linearLayout"
+                android:text="Daftarkan diri anda sebagai seorang atlet dengan cara mengisi formulir pendaftaran akun. Setelah melakukan pengisihan formulir, tunggu hingga akun anda terverifikasi."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/buttonBack"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorWhite"
+                        android:text="back"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold" />
+
+                    <Button
+                        android:id="@+id/buttonNext"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorPrimary"
+                        android:text="next"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
